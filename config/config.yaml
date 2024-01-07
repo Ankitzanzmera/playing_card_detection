@@ -1,0 +1,11 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source: https://drive.google.com/uc?id=14GfObNxeUxZzDnb3PNuE-_r98Yn-GC9T
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion/playing_card_data/
+
+data_validation:
+  root_dir: artifacts/data_validation
+  

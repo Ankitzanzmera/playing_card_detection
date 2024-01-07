@@ -4,7 +4,7 @@ from pathlib import Path
 
 logging.basicConfig(level= logging.INFO,format = '[ %(asctime)s ] : %(message)s')
 
-project_name = "text_summarizer"
+project_name = "Playing_card_detection"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
