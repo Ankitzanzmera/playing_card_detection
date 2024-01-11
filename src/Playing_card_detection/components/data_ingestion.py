@@ -12,7 +12,7 @@ class DataIngestion:
     def download_file(self):
         try:
             if not os.path.exists(self.config.local_data_file):
-                gdown.download(self.config.source,str(self.config.local_data_file))
+                gdown.download(self.config.source,self.config.local_data_file,quiet=True)
                 logger.info("Zip File Downloaded Successfully")
             else:
                 logger.info("Zip File Already Existed")
