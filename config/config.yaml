@@ -2,11 +2,18 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source: https://drive.google.com/uc?id=1pZTrVq1aTzhAx5dnGfFSE4gy8HG846aF&confirm=t"
+  source: https://drive.google.com/uc?id=1XjX4w-gdIeCPvvl---6ZYKBAWrSZlKht&confirm=t
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion/playing_card_data/
 
 data_validation:
   root_dir: artifacts/data_validation
   data_validation_status_file: artifacts/data_validation/status.txt
-  data_validation_required_file: ['train','test','valid','data.yaml']
+  data_validation_required_file: ['train','valid','data.yaml']
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  model_pretrained_weight_name: 'yolov5s.pt'
+  dataset_yaml_file: artifacts/data_ingestion/playing_card_data/data.yaml
+  EPOCHS: 1
+  BATCH_SIZE: 32

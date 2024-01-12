@@ -14,7 +14,7 @@ class DataValidationPipeline:
         except Exception as e:
             raise CustomException(e,sys)
         
-STAGE_NAME = "Data_Validation"
+STAGE_NAME = "Data Validation"
 
 if __name__ == "__main__":
     try:

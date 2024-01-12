@@ -15,7 +15,7 @@ class DataIngestionPipeline:
         except Exception as e:
             raise CustomException(e,sys)
         
-STAGE_NAME = "Data_Ingestion"
+STAGE_NAME = "Data Ingestion"
 
 if __name__ == "__main__":
     try:

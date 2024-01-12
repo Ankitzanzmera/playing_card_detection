@@ -49,7 +49,6 @@ def decodeImage(imgstring,filename):
     os.makedirs(save_directory,exist_ok= True)
     with open(os.path.join(save_directory,filename),"wb") as file_obj:
         file_obj.write(imgdata)
-        file_obj.close
 
 def encodeImageintobase64(croppedImagePath):
     with open(croppedImagePath,"rb") as file_obj:
